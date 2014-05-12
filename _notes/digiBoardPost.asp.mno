@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordset1" value="name:digiB_id;datatype:INTEGER,name:digiB_name;datatype:LONGCHAR,name:digiB_face;datatype:LONGCHAR,name:digiB_subject;datatype:LONGCHAR,name:digiB_potime;datatype:DATETIME,name:digiB_email;datatype:LONGCHAR,name:digiB_web;datatype:LONGCHAR,name:digiB_content;datatype:LONGCHAR" />
+</info>

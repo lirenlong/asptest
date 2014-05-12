@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<p align="center">实验一：微波测试系统的调试与晶体检波器的校准 </p>
+<p>一、实验目的与要求<br />
+  1.了解微波测试系统； <br />
+  2.熟悉测量线的使用方法；<br />
+  3.掌握校准晶体检波器特性的方法。<br />
+  二、实验类型 <br />
+  验证型<br />
+  三、实验原理及说明<br />
+  测量线由开槽波导、不调谐探头和滑架组成。开槽波导中的场由不调谐探头取样，探头的移动靠滑架上的传动装置，探头的输出送到显示装置，就可以显示沿波导轴线的电磁场变化信息。测量线外形如图:</p>
+<p>&nbsp;&nbsp;&nbsp;  &nbsp;    &nbsp;    &nbsp;&nbsp;&nbsp;      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/1.jpg" width="476" height="250" /></p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 图: DH364A00型3cm测量线外形 <br />
+  测量线波导是一段精密加工的开槽直波导,此槽位于波导宽边的正中央，平行于波导轴线，不切割高频电流，因此对波导内的电磁场分布影响很小，此外，槽端还有阶梯匹配段，两端法兰具有尺寸精确的定位和连接孔，从而保证开槽波导有很低的剩余驻波系数。 <br />
+  不调谐探头由检波二极管、吸收环、盘形电阻、弹簧、接头和外壳组成，安放在滑架的探头插孔中。不调谐探头的输出为ＢＮＣ接头，检波二极管经过加工改造的同轴检波管，其内导体作为探针伸入到开槽波导中，因此，探针与检波晶体之间的长度最短，从而可以不经调谐，而达到电抗小、效率高，输出响应平坦。 <br />
+滑架是用来安装开槽波导和不调谐探头的，其结构见图。把不调谐探头放入滑架的探头插孔⑹中，拧紧锁紧螺钉⑽，即可把不调谐探头固紧。探针插入波导中的深度，用户可根据情况适当调整。  出厂时，探针插入波导中的深度为1.5mm ，约为波导窄边尺寸的15％。 </p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; <img src="images/2.jpg" width="323" height="262" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <img src="images/3.jpg" width="284" height="244" /></p>
+<p align="center">图 驻波测量线结构外形图 </p>
+<p>⑴水平调整螺钉　　　用于调整测量线高度 <br />
+  ⑵百分表止挡螺钉　　细调百分表读数的起始点 <br />
+  ⑶可移止挡&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 粗调百分表读数 <br />
+  ⑷刻度尺&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 指示探针位置 <br />
+  ⑸百分表插孔&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; 插百分表用 <br />
+  ⑹探头插孔&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 　装不调谐探头 <br />
+  ⑺探头座&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 可沿开槽线移动 <br />
+  ⑻游标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 与刻度尺配合，提高探针位置读数分辨率 <br />
+  ⑼手柄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 旋转手柄，可使探头座沿开槽线移动 <br />
+  ⑽探头座锁紧螺钉&nbsp;  &nbsp; 将不调谐探头固定于探头插孔中 <br />
+  ⑾夹紧螺钉&nbsp;          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 安装夹紧百分表用 <br />
+  ⑿止挡固定螺钉&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 将可移止挡⑶固定在所要求的位置上 <br />
+⒀定位垫圈（图中未示出）用来控制探针插入波导中的深度。 </p>
+<p>在分析驻波测量线时，为了方便起见通常把探针等效成一导纳Yu与传输线并联。如 <br />
+  图10所示。其中Gu为探针等效电导，反映探针吸取功率的大小，Bu为探针等效电纳，表示探针在波导中产生反射的影响。当终端接任意阻抗时，由于Gu的分流作用，驻波腹点的电场强度要比真实值小，而Bu的存在将使驻波腹点和节点的位置发生偏移。当测量线终端短路时，如果探针放在驻波的波节点B上，由于此点处的输入导纳yin→∞故Yu的影响很小，驻波节点的位置不会发生偏移。如果探针放在驻波的波腹点，由于此点上的输入导纳yin→0,故Yu对驻波腹点的影响就特别明显，探针呈容性电纳时将使驻波腹点向负载方向偏移。如图所示。所以探针引入的不均匀性，将导致场的图形畸变，使测得的驻波波腹值下降而波节点略有增高，造成测量误差。欲使探针导纳影响变小，探针愈浅愈好，但这时在探针上的感应电动势也变小了。通常我们选用的原则是在指示仪表上有足够指示下，尽量减小探针深度，一般采用的深度应小于波导高度的10％～15％。<strong> </strong></p>
+<p><img src="images/(LBRN9A9WSQNI1G3SXUHFNL.jpg" width="244" height="145" /></p>
+<p>图探针电纳对驻波分布图形的影响 </p>
+<p><img src="images/~NFZV$71(0P2S~0DN03]{S1.jpg" width="304" height="98" /><br />
+ &nbsp; 图探针等效电路 </p>
+<p>&nbsp;</p>
+<p>微波频率很高，通常用检波晶体(微波二极管)将微波信号转换成直流信号来检测的。 <br />
+  晶体二极管是一种非线性元件，亦即检波电流J同场强正之间不是线性关系，在一定范围内，大致有如下关系 <br />
+  <img src="images/EA_F9BRUH67V{J{}KK_[YW8.jpg" width="74" height="36" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （5）  <br />
+  其中：k,α是和晶体二极管工作状态有关的参量。当微波场强较大时呈现直线律，当微波场强较小时(P&lt;lμW)呈现平方律。因此，当微波功率变化较大时α和k就不是常数，且和外界条件有关，所以在精密测量中必须对晶体检波器进行校准。 <br />
+  校准方法：将测量线终端短路，这时沿线各点驻波的振幅与到终端的距离<img width="9" height="19" src="shiyan1_clip_image004.gif" />的关系应当为 <br />
+  <img src="images/`4WNTP}MHZ$UMDPRS4MRFM3.jpg" width="137" height="79" />⑹ <br />
+  上述关系中的<img width="9" height="19" src="shiyan1_clip_image004_0000.gif" />也可以以任意一个驻波节点为参考点。将上两式联立，并取对数得到 <br />
+  <img src="images/`TM0X8OHS(FL$R77{N0[PNW.jpg" width="170" height="65" /> ⑺ <br />
+  </p>
+<p>四、实验仪器</p>
+<div align="center">
+  <table border="1" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="71" valign="top"><br />
+        序 号 </td>
+      <td width="123" valign="top"><p align="center">名 称</p></td>
+      <td width="148" valign="top"><p align="center">主要用途</p></td>
+    </tr>
+    <tr>
+      <td width="71"><p>1</p></td>
+      <td width="123" valign="top"><p>测量线</p></td>
+      <td width="148" valign="top"><p>测量数据</p></td>
+    </tr>
+    <tr>
+      <td width="71"><p>2</p></td>
+      <td width="123" valign="top"><p>调配元件</p></td>
+      <td width="148" valign="top"><p>系统调配</p></td>
+    </tr>
+    <tr>
+      <td width="71"><p>3</p></td>
+      <td width="123" valign="top"><p>3厘米波微波系统</p></td>
+      <td width="148" valign="top"><p>组成系统</p></td>
+    </tr>
+    <tr>
+      <td width="71"><p>4</p></td>
+      <td width="123" valign="top"><p>待测元件</p></td>
+      <td width="148" valign="top"><p>系统待测</p></td>
+    </tr>
+    <tr>
+      <td width="71"><p>5</p></td>
+      <td width="123" valign="top"><p>辅助器件（如短路器、匹配负载等）</p></td>
+      <td width="148" valign="top"><p>辅助实验</p></td>
+    </tr>
+    <tr>
+      <td width="71"><p>6</p></td>
+      <td width="123" valign="top"><p>选频放大器</p></td>
+      <td width="148" valign="top"><p>辅助实验</p></td>
+    </tr>
+  </table>
+</div>
+<p>五、实验内容和步骤<strong> </strong><br />
+  1.按测试装置图，连接各微波元件。<br />
+  2.调整测量线<br />
+  （1）测量线终端接晶体检波器，调整微波信号源，使获得最大输出功率。<br />
+  （2）用频率计测量工作频率，记录数据，随即失谐频率计。<br />
+  （3）调整测量线。测量线终端接匹配负载，调整探针插入深度约1～1.5mm，并将探头晶体检波输出端接指示器。然后移动探针至测量线中间部位，调节探头活塞，使电表偏移最大，如果发现探针可调谐在几个峰值上时，应选取峰值最大位置，此时测量线处于最佳工作状态。<br />
+  3.测量波导波长<br />
+  测量线终端接短路板，移动探针至波节点，用交叉读数法测量三个相邻波节点的位<br />
+  置，列出相应表格，记录数据d11、d12、d21、d22、d31 、d32? ，并计算波导波长<br />
+  4.校准晶体二极管检波特性<br />
+  分别计算各测量点与波节点的距离d 。选取前面测得的波节点d0，分别计算测量点的实际位置d0+d，将数据记录。 <br />
+  测量线终端接短路板，调整微波衰减器，使探针位于波腹点时指示电表读数为满刻度100% 。探针自波节点开始移动，分别读取d0+d各位置，对应的指示电表读数，并将数据记录。<br />
+  <br />
+  六、实验数据处理与分析<strong> </strong><br />
+  根据上面测得的数据在坐标纸上以EI为横坐标，I为纵坐标，描绘I－EI晶体定标曲线。<strong> </strong><br />
+  七、注意事项<strong> </strong><br />
+  1．测量波导波长或其它参量时，测量线探针位置及短路活塞位置必须朝同一个方向移动，以免引起回差。<br />
+  2．用交叉－读数法测得纯驻波波节点时，微波衰减器衰减量须置于最小值，提高指示器灵敏度。但在移动测量线时必须同时加大衰减量或降低指示器灵敏度，以防止晶体烧毁或指示电载过载而损坏。<br />
+  3．当微波信号源工作频率改变时，测量线必须重新调整。</p>
+<br clear="all" />
+<p align="left">&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
