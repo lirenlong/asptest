@@ -1,7 +1,5 @@
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="936"%>
 
-
-
 <!--#include file="Connections/llxxcc.asp" -->
 
 <%
